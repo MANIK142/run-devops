@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "shopping.client": "StartDebugging",
+        "Shopping.api": "StartDebugging",
+        "shopping.api": "StartDebugging"
+      }
+    }
+  }
+}
