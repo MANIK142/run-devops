@@ -19,12 +19,12 @@ spec:
           image: mkshoppingacr.azurecr.io/shoppingapi:v1
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           env:
             - name: ASPNETCORE_ENVIRONMENT
               value: Development
             - name: ASPNETCORE_HTTP_PORTS
-              value: "8080"
+              value: "80"
             - name: DatabaseSettings__ConnectionString
               valueFrom:
                   configMapKeyRef:
@@ -51,6 +51,6 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 80
 
     
